@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h3>QR Manipulator</h3>
+        <nav>
+            <a id="home" >Home</a>
+            <a id="generate">Generate</a>
+            <a id="scan">Scan</a>
+        </nav>
+
+    </header>
+    <!-- Section 1 for Landing Page-->
+    <article id="sec1">
+        <section  class=".sec">
+            <div class="text">
+               <h1>
+                QR Manipulator
+                </h1>
+                <p>
+                    QR code is smart and quick way to access website data.
+                    <br />
+                    QR Manipulator helps you generate QR code with your encoded information and helps you scan generated QR codes.
+                </p>    
+                <div class="btns">
+                    <button id="generate-button" class="generate">Generate</button>
+                <button id="scan-button" class="scan">Scan</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="./code-styling2.png" alt="QR Code" height="300" width="300" />
+            </div>
+        </section>
+    </article>
+
+    <!-- Section 2 for Generating QR code - before-->
+    <article id="sec2">
+        <section  class=".sec">
+            <div class="text">
+                <h1>
+                 Generate QR Code
+                 </h1>
+                 <p>
+                    Enter text/URL below:
+                    <br/>
+                 </p>    
+                 <div class="input">   
+                    <input type="text" class="box" placeholder="hello,i am binte" />
+                 </div>
+                 <div class="btns">
+                     <button id="generate-btn" class="generate">Generate</button>
+                 </div>
+             </div>
+             <div class="image" >
+                 <img src="./cute-qr.png" id="qrcode" alt="QR Code" height="300" width="300" style="border: 1px solid lightgray;" />
+             </div>
+        </section> 
+    </article>
+
+    <!-- Section 3 for Generating QR code - after-->
+    <article id="sec3">
+        <section  class=".sec">
+            <div class="text">
+                <h1>
+                 Generated QR Code
+                 </h1>
+                 <p>
+                    QR code with information below is generated: 
+                 </p>    
+                 <div class="input" id="qr-text">https://www.google.com</div>
+                 <div class="btns">
+                     <button id="download-btn">Download</button>
+                     <button id="go-home">Home</button>
+                 </div>
+             </div>
+             <div class="image"height="500" id="add-qr" width="500">
+             </div>
+        </section>
+    </article>
+
+    <!-- Section 4 for Scanning QR code - before -->
+    <article id="sec4">
+        <section  class=".sec">
+            <div class="text">
+                <h1>
+                 Scan QR Code
+                 </h1>   
+                 <div class="input">
+                    <span>Choose File...</span>
+                    <input type="file"  accept="image/*"  id="file-input"/>
+                 </div>
+                 <div class="btns">
+                     <button id="scan-btn">Scan</button>
+                 </div>
+             </div>
+             <div class="image">
+                 <img src="./cute-qr.png" id="set-qr" alt="QR Code" style="border: 1px solid lightgray;"/>
+             </div>
+        </section>
+    </article>
+
+    <!-- Section 5 for Scanning QR code - after -->
+    <article id="sec5">
+        <section  class=".sec">
+            <div class="text">
+                <h1>
+                 Scan QR Code
+                 </h1>   
+                 <p>Text from scanned QR code is:</p><br />
+                 <div class="input">   
+                    <p class="box">hello,i am binte
+                    </p>
+                 </div>
+                 <div class="btns">
+                     <button id="link-button">Go to Link</button>
+                     <button id="go-home2">Home</button>
+                 </div>
+             </div>
+             <div class="image">
+                <div id="qr-reader" width="300" height="300"></div>
+             </div>
+        </section>
+    </article>
+    <script src="app.js"></script>
+</body>
+</html>

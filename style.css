@@ -1,0 +1,506 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inika&family=Itim&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+background-color: #5B50A1 ;
+height: 5rem;
+color: white;
+font-family: 'inika', serif;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+
+h3 {
+    padding-left: 3rem ;
+    font-size: 1.2rem;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a {
+   text-decoration: none;
+   color: white;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec1 section, 
+#sec2 section,
+#sec3 section, 
+#sec4 section, 
+#sec5 section {
+    width: 80%;
+    height: 70%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1rem;
+}
+
+#sec1 section {
+    width:73%;
+}
+
+#sec1 .image, 
+#sec2 .image,
+#sec3 .image, 
+#sec4 .image, 
+#sec5 .image {
+    width: 30%;
+    height: fit-content;
+}
+
+#sec1 .text, 
+#sec2 .text,
+#sec3 .text, 
+#sec4 .text, 
+#sec5 .text {
+    width:70%;
+    height: 20rem;
+}
+
+#sec1 h1, 
+#sec2 h1,
+#sec3 h1, 
+#sec4 h1, 
+#sec5 h1 {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    font-family: 'Inika', 'serif';
+    font-size: 3rem;
+    color: #404040;
+}
+
+#sec1 p, 
+#sec2 p,
+#sec3 p, 
+#sec4 p, 
+#sec5 p {
+    font-family: 'Inder', 'montserrat';
+    width: 70%;
+    line-height: 1.6rem;
+}
+
+#sec1 .btns, #sec3 .btns, #sec4 .btns {
+    margin: 3rem 0rem 0.2rem;
+    padding:1rem 0;
+}
+
+#sec1 .btns button, 
+#sec2 .btns button,
+#sec3 .btns button, 
+#sec4 .btns button, 
+#sec5 .btns button {
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 3rem 0 0;
+    color: #5748b4;
+    cursor:pointer;
+    padding: .5rem 1rem;
+    border-radius: 8px ;
+    box-shadow: 1px 1px 8px  #aaaaaa;
+} 
+
+/* #sec1 { 
+    display: none;
+} */
+
+#sec2 section {
+    width: 70%;
+    height: 70%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+#sec2 .input .box {
+    width: 25rem;
+    height: 6rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: #ffffff;
+    color: gray;
+    border:1px solid rgba(0, 0, 0, 0.26);
+    padding: .7rem;
+}
+ 
+#sec2 .image {
+    width:50%;
+}
+#sec2 .btns button {
+    margin: 2rem 0 0.3rem .3rem;
+}
+
+#sec2 { 
+    display: none;
+}
+
+#sec3  section{
+    width: 70%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#sec3 .input {
+    width: 25rem;
+    height: 6rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: #ffffff;
+    color: gray;
+    border:1px solid rgba(0, 0, 0, 0.26);
+    padding: .7rem;
+}
+
+#sec3 .btns {
+    margin:1rem 0 0;
+}
+
+#sec3 { 
+    display: none;
+}
+
+#sec4 section{
+    width: 70%;
+    height: 70%;
+    padding: auto 1rem;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sec4 .btns button {
+    color:#404040;
+}
+#sec4 .image img {
+    width:100%;
+    height:100%;
+}
+
+#sec4 .input {
+    width: 70%;
+    height: 6rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: #cfcfcf;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: .7rem;
+    cursor: pointer;
+}
+
+#sec4 .input input {
+    display: none;
+}
+
+#sec4 { 
+    display: none;
+}
+
+#sec5 section{
+    width: 70%;
+}
+
+#sec5 .input .box {
+    width: 25rem;
+    height: 7rem;
+    font-size: 1rem;
+    outline: none;
+    background-color: #ffffff;
+    color: gray;
+    border:1px solid rgba(0, 0, 0, 0.26);
+    padding: .7rem;
+    display: flex;
+    justify-content: start;
+    overflow: auto;
+}
+
+#sec5 .btns {
+    margin: 1.5rem 0rem 0rem;
+}
+
+#sec5 { 
+    display: none;
+}
+
+#sec4 .btns #scan-btn {
+    background-color: #adabb8;
+    cursor:default;
+}
+
+#sec5 .image {
+    height: 300;
+    width: 300;
+}
+
+/* MEDIA QUERY FOR  MOBILE PHONES */
+/* ------------------------------ */
+
+@media screen and (max-width:480px) {
+    * {
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    h3 { 
+        padding-left: 1.4rem;
+    }
+    #sec1 section, 
+    #sec2 section, 
+    #sec3 section,
+    #sec4 section, 
+    #sec5 section {
+        width: 90%;
+        height: auto;
+        margin: 5rem auto 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #sec1 .text, 
+    #sec2 .text, 
+    #sec3 .text,
+    #sec4 .text, 
+    #sec5 .text {
+        height: auto;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #sec2 .input .box {
+        width: 100%;
+        height: 7rem;
+        font-size: 1rem;
+        outline: none;
+        background-color: #ffffff;
+        color: gray;
+        border:1px solid rgba(0, 0, 0, 0.26);
+        padding: .7rem;
+    }
+
+    #sec1 p, 
+    #sec2 p, 
+    #sec3 p,
+    #sec4 p, 
+    #sec5 p {
+        width: 100%;
+    }
+
+    #sec1 h1, 
+    #sec2 h1, 
+    #sec3 h1,
+    #sec4 h1, 
+    #sec5 h1 {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        font-family: 'Inika', 'serif';
+        font-size: 2.5rem;
+        color: #404040;
+    }
+
+    #sec2 h1 {
+        font-size: 1rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #sec1 .btns,
+    #sec2 .btns, 
+    #sec3 .btns,
+    #sec4 .btns,
+    #sec5 .btns {
+        margin:0;
+    }
+
+    #sec1 .btns button, 
+    #sec2 .btns button, 
+    #sec3 .btns button,
+    #sec4 .btns button, 
+    #sec5 .btns button {
+        width: 95%;
+        margin-top: 1.3rem;
+    } 
+
+    #sec3 .input {
+        width: 100%;
+        height: 7rem;
+        font-size: 1rem;
+        outline: none;
+        background-color: #ffffff;
+        color: gray;
+        border:1px solid rgba(0, 0, 0, 0.26);
+        padding: .7rem;
+    }
+
+    #sec1 img, 
+    #sec2 img, 
+    #sec3 img,
+    #sec4 img, 
+    #sec5 img {
+        margin: 2.5rem auto 5%;
+    }
+
+    #sec4 .input {
+        width:100%;
+    }
+
+    #sec4 .btns button {
+        background-color: #5B50A1;
+    }
+
+    #sec4 .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #sec5 .input .box {
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERY FOR IPADS */
+/* --------------------- */
+@media screen and (max-width:786px) {
+    #sec1 section, 
+    #sec2 section, 
+    #sec3 section,
+    #sec4 section, 
+    #sec5 section {
+        width: 90%;
+        height: auto;
+    }
+
+    #sec1 img, 
+    #sec2 img, 
+    #sec3 img,
+    #sec4 img, 
+    #sec5 img {
+        width: 100%;
+    } 
+    #sec1 .text, 
+    #sec2 .text, 
+    #sec3 .text,
+    #sec4 .text, 
+    #sec5 .text {
+        height: auto;
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+
+    #sec3 .input {
+        width: 70%;
+        height: 7rem;
+        font-size: 1rem;
+        outline: none;
+        background-color: #ffffff;
+        color: gray;
+        border:1px solid rgba(0, 0, 0, 0.26);
+        padding: .7rem;
+    }
+
+    #sec4 .input {
+        width:70%;
+    }
+    #sec4 .image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #sec5 .image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #sec1 section, 
+    #sec2 section, 
+    #sec3 section,
+    #sec4 section, 
+    #sec5 section {
+        width: 90%;
+        height: auto;
+    }
+
+    #sec1 img, 
+    #sec2 img, 
+    #sec3 img,
+    #sec4 img, 
+    #sec5 img {
+        width: 100%;
+    } 
+    #sec1 .text, 
+    #sec2 .text, 
+    #sec3 .text,
+    #sec4 .text, 
+    #sec5 .text {
+        height: auto;
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+
+    #sec3 .input {
+        width: 70%;
+        height: 7rem;
+        font-size: 1rem;
+        outline: none;
+        background-color: #ffffff;
+        color: gray;
+        border:1px solid rgba(0, 0, 0, 0.26);
+        padding: .7rem;
+    }
+
+    #sec4 .input {
+        width:70%;
+    }
+    #sec4 .image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #sec5 .image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
